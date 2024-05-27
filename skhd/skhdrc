@@ -98,6 +98,15 @@ alt - 5 : yabai -m window --space 5;
 alt - 6 : yabai -m window --space 6;
 alt - 7 : yabai -m window --space 7;
 
+# move window to space #
+# ctrl - 1 : yabai -m space --focus 1;
+# alt - 2 : yabai -m window --space 2;
+# alt - 3 : yabai -m window --space 3;
+# alt - 4 : yabai -m window --space 4;
+# alt - 5 : yabai -m window --space 5;
+# alt - 6 : yabai -m window --space 6;
+# alt - 7 : yabai -m window --space 7;/var/folders/h6/fvcv1prn2vd277wly2ssj0ch0000gn/T/TemporaryItems/NSIRD_screencaptureui_d9FiU8/Screenshot\ 0006-05-27\ at\ 17.11.13.png 
+
 # -- Starting/Stopping/Restarting Yabai --
 
 # stop/start/restart yabai
