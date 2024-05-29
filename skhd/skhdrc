@@ -1,17 +1,18 @@
 # -- Changing Window Focus --
 
 # change window focus within space
-cmd - k : yabai -m window --focus north
-cmd - h : yabai -m window --focus west
-cmd - j : yabai -m window --focus south
-cmd - l : yabai -m window --focus east
+alt - k : yabai -m window --focus north
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - l : yabai -m window --focus east
 
-cmd - 0x21 : yabai -m window --focus prev || yabai -m window --focus last
-cmd - 0x1E : yabai -m window --focus next || yabai -m window --focus first
+alt - 0x21 : yabai -m window --focus prev || yabai -m window --focus last
+alt - 0x1E : yabai -m window --focus next || yabai -m window --focus first
 
 # focus external displays
-cmd - o :	yabai -m display --focus prev || yabai -m display --focus last
-cmd + shift - o : yabai -m display --focus next || yabai -m display --focus first
+alt - o :	yabai -m display --focus prev || yabai -m display --focus last
+# alt + shift - i : yabai -m display --focus next || yabai -m display --focus first
+# alt + shift - i : yabai -m display --focus next || yabai -m display --focus first
 # alt - 0x21 : yabai -m window --focus prev
 # alt - 0x1E : yabai -m window --focus next
 
@@ -25,19 +26,19 @@ cmd + shift - o : yabai -m display --focus next || yabai -m display --focus firs
 # shift + alt - r : yabai -m space --rotate 270
 
 # flip along y-axis
-cmd - b : yabai -m space --mirror y-axis; yabai -m window --focus prev || yabai -m window --focus last;
+alt - b : yabai -m space --mirror y-axis; yabai -m window --focus prev || yabai -m window --focus last;
 
 # flip along x-axis
 # shift + alt - x : yabai -m space --mirror x-axis
 
 # toggle window float
-cmd + shift - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 
 # -- Modifying Window Size --
 
 # maximize a window
-cmd + shift - f : yabai -m window --toggle zoom-fullscreen
+alt - f : yabai -m window --toggle zoom-fullscreen
 
 # balance out tree of windows (resize to occupy same area)
 shift + alt - e : yabai -m space --balance
@@ -55,10 +56,10 @@ shift + alt - e : yabai -m space --balance
 
 
 # move windows
-cmd + shift - j : yabai -m window --swap south
-cmd + shift - k : yabai -m window --swap north
-cmd + shift - h : yabai -m window --swap west
-cmd + shift - l : yabai -m window --swap east
+alt + shift - j : yabai -m window --swap south
+alt + shift - k : yabai -m window --swap north
+alt + shift - h : yabai -m window --swap west
+alt + shift - l : yabai -m window --swap east
 
 # rotate layout clockwise
 shift + alt - r : yabai -m space --rotate 90
