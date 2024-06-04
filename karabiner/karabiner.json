@@ -18,7 +18,7 @@
                 },
                 "rules": [
                     {
-                        "description": "option + [ or ] to ctrl + tab or ctrl + shift + tab",
+                        "description": "option + s or d to ctrl + tab or ctrl + shift + tab",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -30,7 +30,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "close_bracket",
+                                    "key_code": "d",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_option"
@@ -49,7 +49,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "open_bracket",
+                                    "key_code": "s",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_option"
