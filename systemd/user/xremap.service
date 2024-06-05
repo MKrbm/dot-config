@@ -1,0 +1,12 @@
+[Unit]
+Description=xremap
+
+[Service]
+Restart=always
+ExecStart=/home/keisuke/.cargo/bin/xremap /home/keisuke/.config/xremap/config.yml --watch
+
+[Install]
+WantedBy=default.target
+
+
+

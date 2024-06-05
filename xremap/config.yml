@@ -1,0 +1,31 @@
+#modmap:
+#  - name: All applications
+#    remap:
+#      CapsLock: Esc
+#virtual_modifiers:
+#  - CapsLock
+keymap:
+  - name: All applications except Alacritty
+    application:
+      not: Alacritty
+    remap:
+      Alt-c: C-c
+      Alt-v: C-v
+      C-c: Alt-c
+      C-v: Alt-v
+
+  - name: Alacritty 
+    application:
+      only: Alacritty
+    remap:
+      Alt-c: C-Shift-c
+      Alt-v: C-Shift-v
+      C-LEFTBRACE: [C-a, n]
+      C-RIGHTBRACE: [C-a, p]
+
+  - name: All applications
+    remap:
+      LEFTMETA-s: C-Shift-tab
+      LEFTMETA-d: C-tab
+      Alt-a: C-a
+      Alt-d: C-d
