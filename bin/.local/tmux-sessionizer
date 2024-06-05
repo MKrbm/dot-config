@@ -4,9 +4,9 @@
 #     selected=$1
 # else
 # fi
-paths=$(cat ~/.config/tmux/project-dirs.txt)
+paths=$(cat ~/.config/tmux/project-dirs.txt | sed "s|^\$HOME|$HOME|")
 # Use the paths in the find command
-selected=$(find $paths -mindepth 1 -maxdepth 1 -type d | fzf)
+selected=$(find $paths -mindepth 1 -maxdepth 1 -type d 2> ~/.config/tmux/err | fzf)
 
 if [[ -z $selected ]]; then
     exit 0

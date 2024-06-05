@@ -1,7 +1,7 @@
-/Users/keisuke/Documents/projects/gakushuin
-/Users/keisuke/Documents/projects/todo
-/Users/keisuke/.config
-/Users/keisuke/Documents/study
-/Users/keisuke/Documents/study/julia
-/Users/keisuke/Documents/projects/jiro
-/Users/keisuke/.config/bin/.local/
+$HOME/Documents/projects/gakushuin
+$HOME/Documents/projects/todo
+$HOME/.config
+$HOME/Documents/study
+$HOME/Documents/study/julia
+$HOME/Documents/projects/jiro
+$HOME/.config/bin/.local/
