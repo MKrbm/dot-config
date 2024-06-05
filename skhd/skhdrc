@@ -64,7 +64,8 @@ alt + shift - h : yabai -m window --swap west
 alt + shift - l : yabai -m window --swap east
 
 # rotate layout clockwise
-shift + alt - r : yabai -m space --rotate 90
+alt - r : yabai -m space --rotate 90
+
 
 
 # stack windows
