@@ -20,8 +20,8 @@ keymap:
     remap:
       Alt-c: C-Shift-c
       Alt-v: C-Shift-v
-      C-LEFTBRACE: [C-a, n]
-      C-RIGHTBRACE: [C-a, p]
+      Alt-LEFTBRACE: Alt-LEFT
+      Alt-RIGHTBRACE: Alt-RIGHT
 
   - name: All applications
     remap:

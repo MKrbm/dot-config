@@ -1,5 +1,6 @@
 $HOME/Documents/projects/gakushuin
 $HOME/Documents/projects/todo
+$HOME/Documents/installers
 $HOME/.config
 $HOME/Documents/study
 $HOME/Documents/study/julia
