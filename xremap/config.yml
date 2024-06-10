@@ -1,13 +1,17 @@
-#modmap:
-#  - name: All applications
-#    remap:
-#      CapsLock: Esc
-#virtual_modifiers:
-#  - CapsLock
+# modmap:
+#   - name: All applications
+#     remap:
+#       CapsLock: Esc
+#       Esc: CapsLock
+    # CapsLock:
+    #   skip_key_event: true
+    #   held: Esc # Required, also accepts arrays
+    #   alone: Esc # Required, also accepts arrays
+    #   alone_timeout_millis: 1000 # Optional
 keymap:
   - name: All applications except Alacritty
     application:
-      not: Alacritty
+      not: [Alacritty, Cursor]
     remap:
       Alt-c: C-c
       Alt-v: C-v
@@ -16,12 +20,19 @@ keymap:
 
   - name: Alacritty 
     application:
-      only: Alacritty
+      only: [Alacritty, Cursor]
     remap:
       Alt-c: C-Shift-c
       Alt-v: C-Shift-v
       Alt-LEFTBRACE: Alt-LEFT
       Alt-RIGHTBRACE: Alt-RIGHT
+
+  # - name: Cursor 
+  #   application:
+  #     only: Cursor
+  #   remap:
+  #     CapsLock: Esc
+  #     Esc: CapsLock
 
   - name: All applications
     remap:
