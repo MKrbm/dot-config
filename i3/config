@@ -67,7 +67,8 @@ bindsym $mod+Return exec /usr/bin/alacritty
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod2+space exec --no-startup-id dmenu_run
+bindsym $mod2+space exec --no-startup-id rofi -show run
+bindsym $mod+w exec --no-startup-id rofi -show window
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -84,6 +85,8 @@ bindsym $mod+j focus  down
 bindsym $mod+k focus  up
 bindsym $mod+l focus  right
 bindsym $mod+h focus  left
+bindsym $mod+v split vertical
+bindsym $mod+g split horizontal
 
 # change focus
 #bindsym $mod+j focus  down
@@ -98,13 +101,20 @@ bindsym $mod+h focus  left
 #bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 bindsym $mod+n focus output next
 bindsym $mod+p focus output next
+
+# bindsym $mod+b swap container with mark C;
+bindsym $mod+b mark C; focus right; swap container with mark C
+# bindsym $mod+b focus left
+# bindsym $mod+Shift+m mar
+
+bindsym $mod+Shift+m exec i3-input -F 'mark %s' -l 1 -P 'Mark: '
 # split in horizontal orientation
 #bindsym $mod+h split h
 
@@ -121,9 +131,9 @@ bindsym $mod+f fullscreen toggle
 
 # toggle tiling / floating
 bindsym $mod+t floating toggle
-
+#
 # change focus between tiling / floating windows
-bindsym $mod+g focus mode_toggle
+# bindsym $mod+t focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -225,7 +235,8 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+s exec "systemctl poweroff"
 
 # Reboot
-bindsym $mod+Shift+x exec "systemctl reboot"
+# bindsym $mod+Shift+x exec "systemctl reboot"
+bindsym --release $mod+x exec --no-startup-id import /tmp/latest-screenshot.png
 
 # Wallpaper
 bindsym $mod+Shift+w exec /home/keisuke/.config/feh/set_random_wp.sh
