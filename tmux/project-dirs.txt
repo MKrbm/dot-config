@@ -3,6 +3,7 @@ $HOME/Documents/projects/todo
 $HOME/Documents/installers
 $HOME/.config
 $HOME/Documents/study
+$HOME/Documents/projects
 $HOME/Documents/study/julia
 $HOME/Documents/projects/jiro
 $HOME/.config/bin/.local/
