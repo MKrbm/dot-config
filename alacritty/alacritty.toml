@@ -17,5 +17,5 @@ style = "Italic"
 family = "SauceCodePro NFM"
 style = "Regular"
 
-[shell]
+[terminal.shell]
 program = "/usr/bin/zsh"
