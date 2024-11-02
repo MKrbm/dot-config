@@ -7,3 +7,7 @@ $HOME/Documents/projects
 $HOME/Documents/study/julia
 $HOME/Documents/projects/jiro
 $HOME/.config/bin/.local/
+$HOME/Documents/presentation
+$HOME/Documents/projects/ABBCC
+$HOME/Installers
+
