@@ -5,7 +5,7 @@ mouse_id=$(xinput list | grep -i "MX Master 3 B Mouse" | grep -o 'id=[0-9]*' | g
 if [ -n "$mouse_id" ]; then
    echo "MX Master 3 B Mouse found : $mouse_id."
    echo "Changed cursor speed"
-   xinput set-prop "$mouse_id" 162 1.5 0 0 0 1.5 0 0 0 1
+   xinput set-prop "$mouse_id" 162 1.8 0 0 0 1.8 0 0 0 1
 else 
    echo "Error: MX Master 3 B Mouse not found" >&2
    exit 1
