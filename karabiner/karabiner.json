@@ -10,7 +10,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.google\\.Chrome$"
+                                            "^com\\.google\\.Chrome$",
+																						"^com.openai.atlas$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
