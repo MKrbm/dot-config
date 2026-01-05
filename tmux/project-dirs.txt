@@ -10,4 +10,5 @@ $HOME/.config/bin/.local/
 $HOME/Documents/presentation
 $HOME/Documents/projects/ABBCC
 $HOME/Installers
-
+$HOME/Pictures
+$HOME/Documents/subscription
